@@ -561,7 +561,7 @@ template {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 768px;
+    max-width: 700px;
   }
   .logo-image {
     width: 132px;
@@ -572,10 +572,11 @@ template {
   }
   .navbar__seach {
     margin-left: auto;
+    margin-right: 35px;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 19px;
+    padding-bottom: 19px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -583,6 +584,10 @@ template {
   }
   .seach__input {
     width: 340px;
+  }
+  .hotel {
+    padding-top: 13px;
+    padding-bottom: 50px;
   }
 }
 
@@ -645,14 +650,6 @@ template {
 @media (max-width: 480px) {
   .container {
     max-width: 320px;
-  }
-  .navbar {
-    position: relative;
-  }
-  .navbar__seach {
-    display: flex;
-    width: 240px;
-    height: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
