@@ -455,7 +455,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 15px;
   padding-bottom: 70px;
 }
 
@@ -478,7 +478,6 @@ template {
 .hotel-info__description {
   margin: 0;
   color: #333333;
-  margin: 5px 0;
 }
 
 .hotel-wrapper {
@@ -495,6 +494,11 @@ template {
 
 .stars {
   flex-basis: 100%;
+  margin-right: 20px;
+}
+
+.stars__star {
+  margin-right: -2px;
 }
 
 .flash-offer {
@@ -572,11 +576,10 @@ template {
   }
   .navbar__seach {
     margin-left: auto;
-    margin-right: 35px;
+    margin-right: 75px;
   }
   .navbar-menu {
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding: 19px 13px 22px 14px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -589,7 +592,7 @@ template {
     padding-bottom: 3px;
   }
   .hotel {
-    padding-top: 0px;
+    padding-top: 32px;
     padding-bottom: 50px;
   }
 }
@@ -653,6 +656,14 @@ template {
 @media (max-width: 480px) {
   .container {
     max-width: 320px;
+    width: 88%;
+  }
+  .navbar-top {
+    padding-top: 20px;
+    padding-bottom: 23px;
+  }
+  .hotel {
+    padding-top: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */
