@@ -28,7 +28,34 @@
         height: 47px
         background-image: url(../img/quote-left.svg)
         background-repeat: no-repeat
-
+      &::after
+        content: ''
+        position: absolute
+        right: 60px
+        top: 118px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position: center
+      border: none  
+      background-color: transparent
+      cursor: pointer
+      z-index: 99
+      &--prev
+        background-image: url(../img/arrow-left.svg)
+        left: 0
+      &--next
+        background-image: url(../img/arrow-right.svg)
+        right: 0
     &__profile
       display: flex
       flex-direction: column
@@ -56,11 +83,13 @@
       display: flex
       align-items: center
     &__text
+      max-width: 537px
       font-size: 12px
       font-style: normal
       font-weight: normal
       line-height: 19px
       text-align: justify
+      margin: auto
 
 
 
