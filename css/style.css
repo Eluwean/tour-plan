@@ -819,7 +819,6 @@ template {
 }
 
 .reviews__title {
-  font-style: normal;
   font-style: Bold;
   font-size: 36px;
   line-height: 45px;
@@ -833,7 +832,7 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 731px;
+  max-width: 730px;
   margin: 45px auto;
   background-color: #fff;
   border-radius: 8px;
@@ -940,7 +939,7 @@ template {
   .slider {
     width: 590px;
   }
-  .swiper-slide__image {
+  .hotel-slider__image {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -989,14 +988,17 @@ template {
   .hotel-panel {
     flex-direction: row;
   }
+  .hotel-slider {
+    width: 100%;
+  }
   .booking {
     width: 340px;
   }
-  .slider {
-    width: 100%;
-  }
   .map {
     width: 340px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1048,12 +1050,12 @@ template {
   .stars {
     flex-basis: auto;
   }
-  .slider {
-    height: 350px;
-  }
   .hotel-panel {
     flex-direction: column;
     min-height: 450px;
+  }
+  .hotel-slider {
+    height: 350px;
   }
   .booking {
     width: 100%;
@@ -1067,17 +1069,36 @@ template {
     flex-direction: column;
     align-items: flex-start;
   }
+  .reviews-slider__item {
+    padding: 0px 30px 30px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item:before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-left: -65px;
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    transform: translate(50%, 0);
+    margin-right: -65px;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
   }
-  .slider {
-    height: 250px;
+  .hotel__slider {
+    margin-bottom: 20px;
   }
   .hotel-slider {
-    margin-bottom: 20px;
+    height: 250px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
@@ -1105,6 +1126,23 @@ template {
   }
   .hotel {
     padding-top: 17px;
+  }
+  .hotel__slider {
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .booking {
+    height: 210px;
+  }
+  .map {
+    min-height: 170px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    margin-bottom: 42px;
+    margin-top: 0;
+    min-width: 245px;
+    min-height: 46px;
   }
 }
 /*# sourceMappingURL=style.css.map */
