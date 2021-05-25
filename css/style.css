@@ -602,6 +602,7 @@ template {
   line-height: 10px;
 }
 
+<<<<<<< HEAD
 .booking {
   background-color: #0A223D;
   color: #fff;
@@ -711,6 +712,58 @@ template {
   background: #000;
   border-radius: 10px;
   overflow: hidden;
+=======
+.swiper-container {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+.swiper-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
+.slider {
+  width: 728px;
+}
+
+.slider__image {
+  border-radius: 8px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.slider-button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.slider-button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
+>>>>>>> 78a0c4dc2164b31fb287d21ec24e28ef9f8091d7
 }
 
 .breadcrumb-list {
@@ -948,8 +1001,12 @@ template {
 }
 
 @media (max-width: 992px) {
+<<<<<<< HEAD
   .container,
   .newsletter-wrapper {
+=======
+  .container {
+>>>>>>> 78a0c4dc2164b31fb287d21ec24e28ef9f8091d7
     max-width: 700px;
   }
   .logo-image {
@@ -980,6 +1037,7 @@ template {
     padding-top: 32px;
     padding-bottom: 50px;
   }
+<<<<<<< HEAD
   .hotel__slider {
     margin-bottom: 30px;
   }
@@ -998,6 +1056,8 @@ template {
   .map {
     width: 340px;
   }
+=======
+>>>>>>> 78a0c4dc2164b31fb287d21ec24e28ef9f8091d7
 }
 
 @media (max-width: 767px) {
