@@ -839,6 +839,7 @@ template {
   background-color: #fff;
   border-radius: 8px;
   padding: 0 30px 95px;
+  height: auto;
 }
 
 .reviews-slider__item::before {
@@ -1256,6 +1257,9 @@ template {
   }
   .activities__card--two {
     order: 1;
+  }
+  .activities__card--four {
+    order: 4;
   }
   .activities__title {
     font-size: 18px;
