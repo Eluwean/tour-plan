@@ -1237,6 +1237,12 @@ template {
   .map {
     min-height: 170px;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
+  .reviews-slider__item {
+    margin-bottom: 0;
+  }
   .reviews__title {
     font-size: 18px;
     margin-bottom: 42px;
@@ -1247,6 +1253,12 @@ template {
   .activities {
     padding-top: 40px;
     padding-bottom: 60px;
+  }
+  .activities__card--two {
+    order: 1;
+  }
+  .activities__title {
+    font-size: 18px;
   }
   .card {
     width: 100%;
