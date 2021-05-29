@@ -1,0 +1,113 @@
+.footer
+  background-color: $dark
+  color: $light
+  padding: 108px 0 46px 0
+  &-wrapper
+    display: grid
+    grid-template-columns: 265px 265px 325px 195px
+    grid-gap: 26px 20px
+    grid-auto-rows: minmax(34px, min-content)
+    margin-bottom: 100px
+  &__logo
+    padding-top: 30px
+    grid-row: 1 / 3
+    width: 152px
+    align-self: stretch
+  &__categories
+    grid-row: 1 / 4
+  &__social
+    &-network
+      grid-row: 2 / 4
+      grid-column: span 2
+      display: flex
+      align-items: start
+    &-links
+      display: flex
+      align-items: center
+      min-width: 83px
+      justify-content: space-between
+  &__contact
+    &-details
+      align-self: start
+      grid-column: span 2
+      margin-left: -3px
+      margin-top: 10px
+    &-form
+      grid-column: span 2
+  &__title
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin-bottom: 16px
+    &--mb-2
+      margin-bottom: 20px
+    &--inline
+      margin: 0 43px 0 0
+    &--mb-32
+      margin-bottom: 32px
+    &--mb-30
+      margin-bottom: 25px
+  &__item
+    display: flex
+    align-items: flex-start
+    font-size: 14px
+    line-height: 22px
+    color: $footer-text-color
+    &--mb-2
+      margin-bottom: 20px
+    &--mb-24
+      margin-top: -5px
+      margin-bottom: 24px
+  &__number
+    display: inline-block
+  &__text
+    font-size: 14px
+    line-height: 22px
+  &__icon
+    &-wrapper
+      margin-left: 5px
+      margin-top: 5px
+      min-width: 40px
+  &__text
+    color: $footer-text-color
+    margin-bottom: 22px
+  &__input
+    width: 100%
+    &-group
+      position: relative
+      margin-bottom: 15px
+      flex-basis: 47%
+  &__message
+    width: 540px
+    height: 123px
+    flex-basis: 100%
+    margin-bottom: 23px
+  &__button
+    min-width: 160px
+    min-height: 50px
+    background-color: $primery
+  &__info
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+  &-bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-disclaimer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 283px
+    margin-left: 50%
+    transform: translateX(-50%)
+    &__item
+      font-size: 12px
+      line-height: 15px
+  &__wrapper
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between

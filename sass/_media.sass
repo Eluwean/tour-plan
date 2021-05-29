@@ -15,6 +15,13 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &-wrapper
+      grid-template-columns: 200px 260px 230px 195px
+    &__input
+      &-group
+        flex-basis: 100%
+
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -65,6 +72,45 @@
   .card
     width: 339px
     height: 255px
+  .footer
+    padding-top: 40px
+    &-wrapper
+      grid-template-columns: 182px 277px 200px
+      grid-row-gap: 49px
+      margin-bottom: 60px
+    &__input
+      &-group
+        flex-basis: 47%
+    &__logo
+      max-width: 97px
+      object-fit: cover
+      grid-row: 1 /2
+    &__social
+      &-network
+        margin-left: -15px
+        padding-top: 46px
+        grid-row: 1 / 2
+        grid-column: span 3
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+    &__contact
+      &-details
+        margin-left: 0
+        margin-top: 13px
+        grid-row: 3
+        grid-column: span 3
+      &-form
+        grid-row: 4
+        margin-top: -13px
+        grid-column: span 3
+        max-width: 540px
+    &__item
+      &--mb-2
+        margin-bottom: 18px
+    &-disclaimer
+      margin-left: 0
+      transform: translateX(0%)
 @media (max-width: 767px)
   .container
     max-width: 576px
