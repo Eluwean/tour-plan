@@ -130,6 +130,10 @@
           display: none
         &--visible
           display: flex
+          width: 240px
+    &__user
+      flex-direction: column
+      justify-content: center
     &-bottom
       display: none
       position: fixed
@@ -137,12 +141,20 @@
       right: 0
       bottom: 0
       top: 78px
+      padding-top: 30px
       &--visible
         display: block
     &-menu
       flex-direction: column
       &__item
         margin-bottom: 20px
+        &--mobile
+          &--visible
+            display: block
+            width: 240px
+  .seach
+    &__input
+      width: 240px
   .menu
     &-button
       display: flex
@@ -159,6 +171,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .hotel
     &-name
       flex-basis: 100%

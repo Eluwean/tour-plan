@@ -1395,6 +1395,11 @@ template {
   }
   .navbar__user--mobile--visible, .navbar__seach--mobile--visible {
     display: flex;
+    width: 240px;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
   }
   .navbar-bottom {
     display: none;
@@ -1403,6 +1408,7 @@ template {
     right: 0;
     bottom: 0;
     top: 78px;
+    padding-top: 30px;
   }
   .navbar-bottom--visible {
     display: block;
@@ -1412,6 +1418,13 @@ template {
   }
   .navbar-menu__item {
     margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+    width: 240px;
+  }
+  .seach__input {
+    width: 240px;
   }
   .menu-button {
     display: flex;
@@ -1429,6 +1442,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    color: #fff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .hotel-name {
     flex-basis: 100%;
