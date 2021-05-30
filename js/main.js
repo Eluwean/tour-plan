@@ -44,4 +44,27 @@ $(document).ready(function () {
 		modalOverlay.removeClass('modal__overlay--visible');
 		modalDialog.removeClass('modal__dialog--visible');
 	}
+
+	// Обработка форм
+	$(".form").each(function () {
+		$(this).validate({
+		errorClass: "invalid",
+		messages: {
+			name: {
+				required: "Please Specify your name",
+				minlength: "Your name musn't be shorter than 2 symbol",
+			},
+			email: {
+				required: "Please enter your email",
+				email: "Your email ought to be this format name@domain.com",
+			},
+			phone: {
+				required: "Your number is required",
+			},
+		},
+	});
+
+	});
+  AOS.init();
+
 });

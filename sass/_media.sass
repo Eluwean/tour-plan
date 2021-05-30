@@ -110,6 +110,10 @@
     &-disclaimer
       margin-left: 0
       transform: translateX(0%)
+  .modal
+    &__dialog
+      max-height: 90%
+      overflow-y: scroll
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -144,6 +148,7 @@
       padding-top: 30px
       &--visible
         display: block
+        overflow: scroll
     &-menu
       flex-direction: column
       &__item
@@ -230,6 +235,38 @@
   .card
     width: 49%
     height: 255px
+  .footer
+    &-wrapper
+      grid-template-columns: 100%
+    &__logo
+      grid-column: 1
+      grid-row: 1
+    &__social-network
+      grid-column: 1
+      grid-row: 2
+      margin-left: 0
+    &__legal
+      grid-column: 1
+      grid-row: 3
+    &__additional
+      grid-column: 1
+      grid-row: 4
+    &__categories
+      grid-column: 1
+      grid-row: 5
+    &__contact-details
+      grid-column: 1
+      grid-row: 6
+    &__contact-form
+      grid-column: 1
+      grid-row: 7
+    &-bottom
+      flex-wrap: wrap
+    &-disclaimer
+      margin-bottom: 10px
+  .modal
+    &__dialog
+      padding: 33px 40px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -256,6 +293,8 @@
     &-top
       padding-top: 20px
       padding-bottom: 23px
+    &-bottom
+      top: 69px
   .hotel
     padding-top: 17px
     &__slider
