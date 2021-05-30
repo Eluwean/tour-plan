@@ -444,6 +444,10 @@ template {
   color: #fff;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .navbar-menu__link {
   color: inherit;
   text-decoration: none;
@@ -1376,8 +1380,38 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__seach, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 30;
+  }
+  .navbar__user--mobile--hidden, .navbar__seach--mobile--hidden {
     display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__seach--mobile--visible {
+    display: flex;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
   }
   .menu-button {
     display: flex;
