@@ -6,13 +6,14 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 		<meta name="viewport" content="Project Web-Start-2021, initial-scale=1.0" />
-		<title>Best tour plan-hotel booking</title>
+		<link rel="icon" href="img/favicon.png" type="image/x-icon">
+		<title>Best tour plan - hotel booking</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/aos.css">
 	</head>
 	<body>
-		<header class="navbar navbar__mobile--fixed">
+		<header class="navbar navbar--mobile--fixed">
 			<div class="container">
 				<div class="navbar-top">
 					<a href="#" class="logo"><img src="img/horizontal-logotype.svg" alt="Logo:Best tour plan" class="logo-image" data-aos="fade-up" data-aos-delay="500"  /></a>
@@ -104,7 +105,7 @@
 					<div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">		
 						<span class="rating__text">User Rattings</span>
 						<!-- /.rating -->
-						<span class="rating__counter">4.5/5</span>
+						<span class="rating__counter">4.5/<span class="rating__small">5</span></span>
 					</div>
 					<!-- /.hotel-info__right -->
 				</div>
@@ -118,7 +119,7 @@
 							<div class="swiper-slide hotel-slider__item"><img src="img/slide.jpg" alt="hotel-image" class="hotel-slider__image" /></div>
 							<div class="swiper-slide hotel-slider__item"><img src="img/slide-1.jpg" alt="hotel-image" class="hotel-slider__image" /></div>
 							<div class="swiper-slide hotel-slider__item"><img src="img/slide-2.jpg" alt="hotel-image" class="hotel-slider__image" /></div>
-							<div class="swiper-slide hotel-slider__item"><img src="img/slide-3.jpg" alt="hotel-image" class="hotel-slider__ge" /></div>
+							<div class="swiper-slide hotel-slider__item"><img src="img/slide-3.jpg" alt="hotel-image" class="hotel-slider__image" /></div>
 							<div class="swiper-slide hotel-slider__item"><img src="img/slide-4.jpg" alt="hotel-image" class="hotel-slider__image" /></div>
 							...
 						</div>
@@ -140,12 +141,12 @@
 								<!-- /.booking__price -->
 								<div class="booking__room">
 									<div class="booking__text">
-										<img src="img/user-icon.svg" alt="Icon:user" class="user__icon" />
+										<img src="img/user-icon.svg" alt="Icon:user" class="user-icon" />
 										<span class="booking__description">2 x Guests</span>
 									</div>
 									<!-- /.booking__text -->
 									<div class="booking__text">
-										<img src="img/home.svg" alt="Icon:home" class="home__icon" />
+										<img src="img/home.svg" alt="Icon:home" class="home-icon" />
 										<span class="booking__description">1 x Room</span>
 									</div>
 									<!-- /.booking__text -->
@@ -156,7 +157,7 @@
 							<div class="booking__call-center">
 								<span class="booking__flat">Quick Booking</span>
 								<a href="12100" class="booking__number">
-									<img src="img/phone-icon.svg" alt="Icon:phone" class="phone-call__icon" />
+									<img src="img/phone-icon.svg" alt="Icon:phone" class="phone-call-icon" />
 									<span class="booking__num">12100</span>
 								</a>
 							</div>
@@ -188,8 +189,8 @@
 					subscribe to our
 					<span class="newsletter-tittle__strong">Newsletter</span>
 				</h2>
-				<form action="send.php" method="POST" class="subscribe newsletter__subsribe" data-aos="fade-down" data-aos-delay="500" >
-					<input type="text" class="subscribe__input" name="email" placeholder="Your email address" />
+				<form action="send.php" method="POST" class="subscribe newsletter__subsribe form" data-aos="fade-down" data-aos-delay="500" >
+					<input type="email" class="subscribe__input" name="email" placeholder="Your email address" required/>
 					<button type="submit" class="subscribe__button">Send</button>
 				</form>
 			</div>
@@ -197,7 +198,7 @@
 		<!-- /.newsletter -->
 		<section class="reviews">
 			<div class="container">
-				<h2 class="reviews__title">What people think about us</h2>
+				<h2 class="reviews__title">What people think about&nbsp;us</h2>
 				<div class="swiper-container reviews-slider">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -207,11 +208,11 @@
 									<h3 class="reviews-slider__username">Megan Fox</h3>
 									<span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
 									<div class="reviews-slider__stars">
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
 									</div>
 									<!-- /reviews-stars -->
 								</div>
@@ -232,11 +233,11 @@
 									<h3 class="reviews-slider__username">Jeff Bridges</h3>
 									<span class="reviews-slider__date">Stayed 18 Oct, 2020</span>
 									<div class="reviews-slider__stars">
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
 									</div>
 									<!-- /reviews-stars -->
 								</div>
@@ -258,11 +259,11 @@
 									<h3 class="reviews-slider__username">Karl Van Lune</h3>
 									<span class="reviews-slider__date">Stayed 31 Dec, 2020</span>
 									<div class="reviews-slider__stars">
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
-										<img src="img/star.svg" alt="stars" class="stars__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
+										<img src="img/star.svg" alt="stars" class="reviews__star" />
 									</div>
 									<!-- /reviews-stars -->
 								</div>
@@ -292,26 +293,26 @@
 				<div class="activities-wrapper">
 					<div class="card activities__card activities__card--one" data-aos="fade-up" data-aos-delay="600" >
 						<img src="img/activities-1.jpg" alt="" class="card__image" />
-						<h3 class="card__title">The curious corner of chamarel</h3>
-						<button class="card__button">Book Now</button>
+						<h3 class="card__title card__title--item">The curious corner of&nbsp;chamarel</h3>
+						<button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
 					</div>
 					<!-- card-1 -->
-					<div class="card activities__card activities__card--two"data-aos="fade-up" data-aos-delay="500" >
+					<div class="card activities__card activities__card--two" data-aos="fade-up" data-aos-delay="500" >
 						<img src="img/activities-2.jpg" alt="" class="card__image" />
-						<h3 class="card__title">Gymkhana club golfcourse</h3>
-						<button class="card__button">Book Now</button>
+						<h3 class="card__title card__tittle--item">Gymkhana club golf course</h3>
+						<button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
 					</div>
 					<!-- card-2 -->
-					<div class="card activities__card activities__card--three"data-aos="fade-up" data-aos-delay="400" >
+					<div class="card activities__card activities__card--three" data-aos="fade-up" data-aos-delay="400" >
 						<img src="img/activities-3.jpg" alt="" class="card__image" />
-						<h3 class="card__title">Tamarind falls hikingtrip - full day</h3>
-						<button class="card__button">Book Now</button>
+						<h3 class="card__title card__title--item">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
+						<button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
 					</div>
 					<!-- card-3 -->
-					<div class="card activities__card activities__card--four"data-aos="fade-up" data-aos-delay="300" >
+					<div class="card activities__card activities__card--four" data-aos="fade-up" data-aos-delay="300" >
 						<img src="img/activities-4.jpg" alt="" class="card__image" />
-						<h3 class="card__title">The blue marine discoveryquest</h3>
-						<button class="card__button">Book Now</button>
+						<h3 class="card__title card__title--item">The blue marine discovery quest</h3>
+						<button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
 					</div>
 					<!-- card-4-->
 				</div>
@@ -324,7 +325,7 @@
 				<div class="footer-wrapper">
 					<a href="index.html" class="logo footer__logo"><img class="logo__image" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" /></a>
 					<div class="footer__list footer__categories">
-						<h3 class="footer__title footer__title--mb-2">all categories</h3>
+						<h3 class="footer__title footer__title--mb-2">all&nbsp;categories</h3>
 						<ul class="footer__ul">
 							<li class="footer__item">
 								<a href="#" class="footer__link">All Deals</a>
@@ -354,7 +355,7 @@
 					</div>
 					<!-- /.footer__list -->
 					<div class="footer__list footer__additional">
-						<h3 class="footer__title">additional information</h3>
+						<h3 class="footer__title">additional&nbsp;information</h3>
 						<ul class="footer__ul">
 							<li class="footer__item">
 								<a href="#" class="footer__link">About Us</a>
@@ -380,13 +381,13 @@
 					<div class="footer__social-network">
 						<h3 class="footer__title footer__title--inline">Social Network</h3>
 						<div class="footer__social-links">
-							<a href="https://www.facebook.com/" class="footer__link">
+							<a href="https://www.facebook.com/" target="_blank" rel="nofollow noopener" class="footer__link">
 								<img src="img/fb.svg" alt="icon: facebook" />
 							</a>
-							<a href="https://www.youtube.com/" class="footer__link">
+							<a href="https://www.youtube.com/" target="_blank" rel="nofollow noopener" class="footer__link">
 								<img src="img/yt.svg" alt="icon: youtube" />
 							</a>
-							<a href="https://www.instagram.com/" class="footer__link">
+							<a href="https://www.instagram.com/" target="_blank" rel="nofollow noopener" class="footer__link">
 								<img src="img/inst.svg" alt="icon: instagram" />
 							</a>
 						</div>
@@ -394,7 +395,7 @@
 					</div>
 					<!-- /.footer__social-network -->
 					<div class="footer__list footer__legal">
-						<h3 class="footer__title">legal information</h3>
+						<h3 class="footer__title">legal&nbsp;information</h3>
 						<ul class="footer__ul">
 							<li class="footer__item">
 								<a href="#" class="footer__link">Terms & Conditions</a>
@@ -478,11 +479,17 @@
 				<a href="#" class="modal__close"><img src="img/close-icon.svg" alt="Icon: close" /></a>
 				<h3 class="modal__title modal__title--mb-32">Booking</h3>
 				<form action="send.php" method="POST" class="form modal__form">
-					<input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="2" required />
-					<input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" minlength="18" required />
-					<input type="email" class="input modal__input" placeholder="Email*" name="phone" minlength="18" required />
+					<div class="modal__input-group">
+						<input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="2" required />
+					</div>
+					<div class="modal__input-group">
+						<input type="tel" class="input modal__input phone" placeholder="Phone Number*"   name="phone" minlength="18" required />
+					</div>
+					<div class="modal__input-group">
+						<input type="email" class="input modal__input" placeholder="Email*" name="email" required />
+					</div>
 					<textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-					<button class="button footer__button" type="submit">Send</button>
+					<button class="button modal__button" type="submit">Send</button>
 					<span class="modal__info">* Required Fields</span>
 				</form>
 			</div>
@@ -496,11 +503,18 @@
 				<a href="#" class="modal__close"><img src="img/close-icon.svg" alt="Icon: close" /></a>
 				<h3 class="modal__title modal__title--mb-32">Send us a feedback</h3>
 				<form action="send.php" method="POST" class="form modal__form">
-					<input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="2" required />
-					<input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" minlength="18" required />
-					<input type="email" class="input modal__input" placeholder="Email*" name="phone" minlength="18" required />
+					<div class="modal__input-group">
+						<input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="2" required />
+					</div>
+					<div class="modal__input-group">
+						<input type="tel" class="input modal__input phone" placeholder="Phone Number*"   name="phone" minlength="18"
+							required />
+					</div>
+					<div class="modal__input-group">
+						<input type="email" class="input modal__input" placeholder="Email*" name="email" required />
+					</div>
 					<textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-					<button class="button footer__button" type="submit">Send</button>
+					<button class="button modal__button" type="submit">Send</button>
 					<span class="modal__info">* Required Fields</span>
 				</form>
 			</div>

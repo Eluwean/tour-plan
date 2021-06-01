@@ -2,7 +2,6 @@ $(document).ready(function () {
 	var hotelSLider = new Swiper(".hotel-slider", {
 		// Optional parameters
 		loop: true,
-		autoHeight: true,
 
 		// Navigation arrows
 		navigation: {
@@ -61,10 +60,18 @@ $(document).ready(function () {
 			phone: {
 				required: "Your number is required",
 			},
+      email: {
+        required: "We need your email to contact you",
+        email: "Mail format: name@domain.com"
+      }
 		},
 	});
 
 	});
-  AOS.init();
+	AOS.init();
+	
+	$(document).ready(function () {
+		$('.phone').mask("+7 (999) 999-99-99");
+	})
 
 });

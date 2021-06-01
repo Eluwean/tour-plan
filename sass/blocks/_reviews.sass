@@ -7,6 +7,7 @@
     text-align: center
     text-transform: uppercase
     margin-bottom: 70px
+    &__star
   &-slider
     &__item
       position: relative
@@ -17,7 +18,7 @@
       margin: 45px auto
       background-color: $light
       border-radius: 8px
-      padding: 0 30px 95px
+      padding: 0 30px 32px
       height: auto
       &::before
         content: ''
@@ -46,16 +47,18 @@
       background-repeat: no-repeat
       background-size: 10px
       background-position: center
-      border: none  
+      border: none
       background-color: transparent
       cursor: pointer
       z-index: 99
       &--prev
         background-image: url(../img/arrow-left.svg)
-        left: 0
+        left: 18px
+        top: 145px
       &--next
         background-image: url(../img/arrow-right.svg)
-        right: 0
+        right: 18px
+        top: 145px
     &__profile
       display: flex
       flex-direction: column
@@ -90,10 +93,3 @@
       line-height: 19px
       text-align: justify
       margin: auto
-
-
-
-
-
- 
-    
